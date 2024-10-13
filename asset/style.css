@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color : #FF5B2E;
+    --primary-color: #ff5b2e;
 }
 html {
     font-size: 62.5%;
@@ -60,6 +60,18 @@ button {
     color: #fff;
     background: var(--primary-color);
     border-color: var(--primary-color);
+}
+.section-heading {
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.9;
+    color: #000958;
+}
+.section__desc {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #656689;
 }
 
 /* Header  */
@@ -152,7 +164,7 @@ button {
     display: flex;
 }
 .hero-list-item:nth-child(3) .hero-list-item__thumb {
-    background:#6597c2;
+    background: #6597c2;
 }
 .hero-list-item__thumb {
     width: 40px;
@@ -206,11 +218,10 @@ button {
 .hero__row {
     display: flex;
     align-items: center;
-    margin-top: 38px    ;
-
+    margin-top: 38px;
 }
 .hero__cta-btn {
-    --height:60px;
+    --height: 60px;
     min-width: 190px;
     font-size: 1.6rem;
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
@@ -223,7 +234,62 @@ button {
     font-weight: 500;
     margin-left: 24px;
     font-size: 1.6rem;
-    line-height: 1; 
+    line-height: 1;
     text-decoration-line: underline;
     color: #000958;
+}
+
+/* About  */
+.about {
+    margin-top: 207px;
+}
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about__label {
+    font-family: "Sora", sans-serif;
+    color: #5e6085;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about__heading {
+    margin-top: 15px;
+}
+
+.about__heading,
+.about__desc {
+    width: 444px;
+}
+
+.about__checklist {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+    margin-top: 54px;
+}
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 500;
+    color: #48496a;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+.about__check-item::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #ff5d31;
+    border-radius: 4px;
+}
+.about__check-item::after {
+    position: absolute;
+    content: url(../asset/icon/Vector.svg);
 }
