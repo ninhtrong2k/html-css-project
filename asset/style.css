@@ -1,8 +1,11 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --primary-color : #FF5B2E;
+}
 html {
-    font-size: 62, 5%;
+    font-size: 62.5%;
 }
 body {
     font-size: 1.6rem;
@@ -36,7 +39,9 @@ button {
 }
 .btn {
     --height: 56px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-width: 130px;
     height: var(--height);
     line-height: var(--height);
@@ -49,6 +54,12 @@ button {
 }
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
+}
+.btn--primary {
+    color: #fff;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 /* Header  */
@@ -175,4 +186,44 @@ button {
     background: #f2f2f2;
     margin: 20px 0;
     border-radius: 99px;
+}
+.hero__content {
+    width: 517px;
+}
+.hero__heading {
+    font-weight: 800;
+    color: #000958;
+    line-height: 1.15;
+    font-size: 6.6rem;
+}
+.hero__desc {
+    margin-top: 24px;
+    min-width: 391px;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #656689;
+}
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px    ;
+
+}
+.hero__cta-btn {
+    --height:60px;
+    min-width: 190px;
+    font-size: 1.6rem;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+.btn__icon {
+    display: flex;
+    margin-top: 5px;
+}
+.hero__cta-link {
+    font-weight: 500;
+    margin-left: 24px;
+    font-size: 1.6rem;
+    line-height: 1; 
+    text-decoration-line: underline;
+    color: #000958;
 }
