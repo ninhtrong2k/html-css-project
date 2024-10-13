@@ -2,11 +2,16 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 62, 5%;
+    font-size: 62,5%;
 }
 body {
     font-size: 1.6rem;
     font-family: "Poppins" , sans-serif;
+}
+
+/* Common  */
+a {
+    text-decoration: none;
 }
 h1,
 h2,
@@ -22,4 +27,56 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container { 
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height : 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid #000958;
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgba(0, 9, 88, 1);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+/* Header  */
+.header {
+    padding: 26px 0;
+    
+}
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__list {
+    display: flex;
+}
+.navbar__link , .heder-action__link {
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+.header-action__btn {
+    --height : 50px;
+    min-width: 118px;
 }
