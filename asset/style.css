@@ -367,3 +367,30 @@ button {
 .about_img-bottom {
     width: 100%;
 }
+.about__decor-img {
+    position: absolute;
+}
+.about__decor-img:nth-child(1) {
+    top: 13px;
+    right: 64px;
+}  
+.about__decor-img:nth-child(2) {
+    top: -16px;
+    right: 13px;
+}  
+.about__decor-img:nth-child(3) {
+    top: 33px;
+    right: -21px;
+}  
+.about__decor-img:nth-child(4) {
+    top: 268px;
+    right: -33px;
+}  
+.about__decor-img:nth-child(5) {
+    top: 328px;
+    right: 19px;
+}  
+.about__decor-img:nth-child(6) {
+    top: 458px;
+    right: -50px;
+}  
