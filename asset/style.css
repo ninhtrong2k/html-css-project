@@ -400,7 +400,7 @@ button {
 }
 .tab__list {
     position: relative;
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
 }
 .tab__content-more::after,
